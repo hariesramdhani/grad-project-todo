@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Graduation Project</title>
+    <meta name="description" content="Graduation Project">
+    <meta name="author" content="Haries Ramdhani">
+    <link href="https://fonts.googleapis.com/css?family=Scope+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="loading-page">
+        <h4>Fall 2017</h4>
+        <h1>GRADUATION PROJECT<br>TO-DO LIST</h1>
+        <p><b>REPORTER PATHWAY ANALYSIS WEB TOOL DEVELOPMENT</b></p>
+        <p style="font-size: 14px; line-height:1.25; ">Muhamad Haries Ramdhani<br><i><b>Supervisor</b>: Assoc. Prof. Tunahan Çakır</i></p>
+    </div>
+
+    <div class="container">
+        <div class="introduction">
+            <p>As my <a href="http://anibal.gyte.edu.tr/ects/?dil=en&modul=ders_bilgi_formu&bolum=220&tip=lisans&duzey=ucuncu&dno=MBG%20495">Graduation Project I</a>, Prof. Tunahan has assigned me to continue developing the Reporter Pathway Analysis Web
+                Tool that has been developed by one of the students from Computer Engineering Department at Gebze Technical University in the previous year. </p>
+            <p>The web itself is almost ready and already deployed, except for several tests and page lacking. In order to make it easy to follow the development of what's been missing/lacking in the web tool this to-do list was created.</p>
+        </div>
+    </div>
+    <div class="container">
+        <p class="container-title">SHORT INTRO</p>
+        <p class="container-title-sub">A Glimpse of Reporter Pathway Analysis (RPA) Web Tool</p>
+        <div class="container-body">
+            <p>Reporter Pathway Analysis Web Tool is a web implementation of <a href="https://www.nature.com/articles/srep14563">paper</a> written by Prof. Tunahan Çakır. The tool itself can be accessed through <a href="http://reporterpathways.org">reporterpathways.org</a>.
+                Reporter Pathway Tools (also known as the RTools) allows the user to analysis their transcriptomics data using the method described in the paper. There are five tools available at the moment, Reporter Features (RF), Reporter Metabolite
+                (RM), Reporter Pathway Analysis (RPA<sup>r</sup>), Reporter Pathway Analysis M2P (RPA<sup>m</sup>M2P), Reporter Pathway Analysis (RPA<sup>m</sup>G2P)</p>
+            <p>RTools also allow the user to create an account, thus it will be easier for the user to maintain their results history. RTools were written in R by a graduate student from the Bioinformatics and System Biology Department at Gebze Technical
+                University İsa Yüksel, and the web itself has <a href="https://www.djangoproject.com/">Python-Django</a> as the backend and <a href="https://getbootstrap.com/css/
+">CSS Bootstrap</a> for template.</p>
+        </div>
+    </div>
+    <div class="container">
+        <p class="container-title">ISSUES</p>
+        <div class="container-body">Here I list some issues that I found and planning to fix during working on my Graduation Project I. There are three type of difficulties, namely <span style="color:#91DC5A;">Easy</span>, <span style="color:#FFF57E;">Medium</span>, <span style="color:#E2433B;">Hard</span>.
+            The difficulties were chosen based on how relatively I see it (so yeah it's subjective). Once the issue is fixed a green check mark will appear inside the green circle.</div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Fixing Typos, Grammatical Errors and Polishing the Texts</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#91DC5A;">Very Easy</span></p>
+            <p class="issue-desc">I found that there are several typos both in the code and in the web view. For example 'metabolit' instead of 'metabolites', there were also some characters that need to be superscripted and subscripted.</p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Designing the Website Logo</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#91DC5A;">Easy</span></p>
+            <p class="issue-desc">İsa told me that the website needs a logo, so I'll also probably try to design the logo in the .svg format, so there won't be any problem with the resolution. </p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Writing the About and Tutorial Entries</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#91DC5A;">Easy</span></p>
+            <p class="issue-desc">Since it is still empty I'll write the tutorial and about entries, fortunately Ali has prepared the Tutorial and About model in <i>models.py</i>.</p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Redesigning the Website's Homepage</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#91DC5A;">Easy</span></p>
+            <p class="issue-desc">The websites's homepage is still plain empty, in the future I'll probably try to add logos, description and several things that will increase the UX.
+            </p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Testing Whether the Code Works as It is Intended</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#91DC5A;">Easy</span></p>
+            <p class="issue-desc">Since it's newly deployed it will also be better to test whether the R code that Isa wrote returned the true results (Results as what it was intended).
+            </p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Improving the Responsivity</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#FFF57E;">Medium</span></p>
+            <p class="issue-desc">There's this bug that makes the element of teh page moved irregularly which caused it to be out of order. Example when the size of the monitor reaches below 780px width, the form boxes and upload button for reporter features become out of
+                order.
+            </p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Creating Test Cases</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#FFF57E;">Medium</span></p>
+            <p class="issue-desc">I found out that Ali hasn't created any test cases for the application. So I think it'll be better to create test cases to prevent bugs or even solve the bugs in the future.</p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">No Title</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#E2433B;">Hard</span></p>
+            <p class="issue-desc">I found out that Ali hasn't created any test cases for the application. So I think it'll be better to create test cases to prevent bugs or even solve the bugs in the future.</p>
+        </div>
+    </div>
+    <script type="javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
