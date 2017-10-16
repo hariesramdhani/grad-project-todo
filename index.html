@@ -6,6 +6,7 @@
     <title>Graduation Project</title>
     <meta name="description" content="Graduation Project">
     <meta name="author" content="Haries Ramdhani">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Scope+One|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -22,7 +23,7 @@
         <div class="introduction">
             <p>As my <a href="http://anibal.gyte.edu.tr/ects/?dil=en&modul=ders_bilgi_formu&bolum=220&tip=lisans&duzey=ucuncu&dno=MBG%20495">Graduation Project I</a>, Prof. Tunahan has assigned me to continue developing the Reporter Pathway Analysis Web
                 Tool that has been developed by one of the students from Computer Engineering Department at Gebze Technical University in the previous year. </p>
-            <p>The web itself is almost ready and already deployed, except for several tests and page lacking. In order to make it easy to follow the development of what's been missing/lacking in the web tool this to-do list was created.</p>
+            <p>The web itself is almost ready and already deployed, except for several tests and elements lacking. In order to make it easy to follow the development of what's been missing/lacking in the web tool this to-do list was created.</p>
         </div>
     </div>
     <div class="container">
@@ -40,7 +41,7 @@
     <div class="container">
         <p class="container-title">ISSUES</p>
         <div class="container-body">Here I list some issues that I found and planning to fix during working on my Graduation Project I. There are three type of difficulties, namely <span style="color:#91DC5A;">Easy</span>, <span style="color:#FFF57E;">Medium</span>, <span style="color:#E2433B;">Hard</span>.
-            The difficulties were chosen based on how relatively I see it (so yeah it's subjective). Once the issue is fixed a green check mark will appear inside the green circle.</div>
+            The difficulties were chosen based on how relatively I see it (so yeah it's subjective). Once the issue is fixed a green check mark will appear inside the green circle and the commit code of the issue will also be stated.</div>
         <div class="issue-container">
             <img class="check-icon" src="assets/img/unchecked.svg">
             <p class="issue-title">Fixing Typos, Grammatical Errors and Polishing the Texts</p>
@@ -49,9 +50,9 @@
         </div>
         <div class="issue-container">
             <img class="check-icon" src="assets/img/unchecked.svg">
-            <p class="issue-title">Designing the Website Logo</p>
+            <p class="issue-title">Designing the Website Logo and Favicon</p>
             <p class="issue-difficulty">Difficulty: <span style="color:#91DC5A;">Easy</span></p>
-            <p class="issue-desc">İsa told me that the website needs a logo, so I'll also probably try to design the logo in the .svg format, so there won't be any problem with the resolution. </p>
+            <p class="issue-desc">İsa told me that the website needs a logo, so I'll also probably try to design the logo in the .svg format, so there won't be any problem with the resolution. I also found out that the website doesn't have a favicon. </p>
         </div>
         <div class="issue-container">
             <img class="check-icon" src="assets/img/unchecked.svg">
@@ -75,6 +76,14 @@
         </div>
         <div class="issue-container">
             <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Adding Detailed Information about Each Form in the Tools</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#91DC5A;">Easy</span></p>
+            <p class="issue-desc">Beside tutorial I believe there should be a [?] question mark beside each parameters in the tools and when the user hovers above it, teh detailed information about the parameter will show, so user doesn't really have to check the tutorial
+                over and over again.
+            </p>
+        </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
             <p class="issue-title">Improving the Responsivity</p>
             <p class="issue-difficulty">Difficulty: <span style="color:#FFF57E;">Medium</span></p>
             <p class="issue-desc">There's this bug that makes the element of teh page moved irregularly which caused it to be out of order. Example when the size of the monitor reaches below 780px width, the form boxes and upload button for reporter features become out of
@@ -89,10 +98,36 @@
         </div>
         <div class="issue-container">
             <img class="check-icon" src="assets/img/unchecked.svg">
-            <p class="issue-title">No Title</p>
-            <p class="issue-difficulty">Difficulty: <span style="color:#E2433B;">Hard</span></p>
-            <p class="issue-desc">I found out that Ali hasn't created any test cases for the application. So I think it'll be better to create test cases to prevent bugs or even solve the bugs in the future.</p>
+            <p class="issue-title">Adding Sample Files for Both P-Values and Network to the Database</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#FFF57E;">Medium</span></p>
+            <p class="issue-desc">Like any other bioinformatics tool, I believe sample files are important for users to test/try the tools.</p>
         </div>
+        <div class="issue-container">
+            <img class="check-icon" src="assets/img/unchecked.svg">
+            <p class="issue-title">Adding Dropdown of Default Networks</p>
+            <p class="issue-difficulty">Difficulty: <span style="color:#E2433B;">Hard</span></p>
+            <p class="issue-desc">Adding the dropdown of default network will make the user's work easier. I think this can be done by two ways, it's either putting the networks into our database or using programmatic access to get the network data from BioCyc databases directly
+                (so less space will be required).</p>
+        </div>
+    </div>
+    <div class="container">
+        <p class="container-title">TIMELINE OF WORK</p>
+        <div class="container-body">
+            <p>I'm planning to finish this in the next two or three weeks (Oct 5th 2017, last week for reviewing the changes before merging it to the master branch) by prioritizing the above issues first. There were also some issues labeled as <i>"less-severe"</i>/<i>"less-important"</i>                like adding comments to the code (so it'll be easier to read for whoever is going to continue this project) and making the video tutorial to use the tools. As the time goes the number of issues will increase/decrease as it will be reviewed
+                by Prof. Tunahan.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <p class="container-title">About The Page</p>
+        <div class="container-body">
+            <p>The page is a static-page was written using simple HTML and CSS3. Font used for this page ("Source Sans Pro") can be found on <a href="https://fonts.google.com/specimen/Source+Sans+Pro">Google Font</a>. The code for this page is hosted on
+                <a href="https://github.com/hariesramdhani/grad-project-todo">GitHub</a>.
+            </p>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom:10px;">
+        <p class="issue-difficulty" style="text-align:center; margin-bottom:0;"><a href="http://hariesramdhani.com">Haries Ramdhani</a> &copy; 2017.</p>
     </div>
     <script type="javascript" src="assets/js/main.js"></script>
 </body>
