@@ -306,3 +306,7 @@ sup {
     text-decoration: none;
     border-bottom: 1px solid white;
 }
+
+.container-body ul li {
+    margin-left: 15px;
+}
