@@ -1,0 +1,58 @@
+<li>Changes are synced to the remote server</li>
+<li>SampleFile and DefaultNetwork is populated</li>
+<li>An error message will pop up if the user is trying to download the file when they entered the wrong inputs</li>
+<li>A message will pop up once the task is being processed</li>
+<li>Process button is frozen now until the user fill all of the requirements</li>
+<li>Javascript manipulation is done in order for the network selection to work</li>
+<li>Tutorials, Abouts and Faq models are populated</li>
+<li>User now can see the news and updates in the index view</li>
+<li>Now cite the paper pop up will appear once the page loads</li>
+<li>Template for index.html is changed for the better</li>
+<li>Added celery configuration method to settings.py</li>
+<li>Added the authentication backends method</li>
+<li>Changed the database from mysql to postgres</li>
+<li>Using supervisorctl celery is now working in background</li>
+<li>celery.py is completely changed (because it didn't work before????) and now it's working</li>
+<li>Changed the login error message</li>
+<li>Added news and updates key to the MainIndexView</li>
+<li>Adding MultiValueDictKeyError exception for the input parameters so the code can work well</li>
+<li>with_fc variable in the ToolView post method is now set to "False"</li>
+<li>Path for RScript is changed to the path of the file in the remote server</li>
+<li>DefaultNetwork field is now available in the tool page and the template tag was also added</li>
+<li>Result view now includes results variable for template tag to be rendered</li>
+<li>Added static links for the files in the media in urls.py</li>
+<li>run_tool in task.py is changed using subprocess from the shell</li>
+<li>auth.py is created, contains a class called DualModelBackend and this will allow the users to use either their username or email to login</li>
+<li>Tutorial model now contains Picture!</li>
+<li>Tutorial model description's CharField is changed to TextField with max length increased to 2000</li>
+<li>Added meta ordering to Result model '-date'</li>
+<li>Result model name varible length now becomes 30 from 20</li>
+<li>Analysis model input_size variable changed from SmallIntegerField to IntegerField</li>
+<li>Added sample file view to views.py</li>
+<li>Added sample file url to the urls.py</li>
+<li>SampleFile model is created</li>
+<li>Changed the authentication mode, now user can log in using either their username or email</li>
+<li>Added labels to UserLoginForm</li>
+<li>Added UserProfileDatForm for user's further information</li>
+<li>Now default network form field is a ModelChoiceField</li>
+<li>Created DefaultNetworkForm</li>
+<li>Changed the DefaultNetwork model now it takes two varible source and name</li>
+<li>Changed the requirement of network field for NetworkForm to False</li>
+<li>Added new meta fields for MathForm p_value and n_perm</li>
+<li>With FC parameter is deleted from the MathInput model</li>
+<li>With FC parameter is deleted for now from the MathForm</li>
+<li>Default name is added to the ResultForm class using the date data</li>
+<li>NewsAndUpdates model is added to the admin page</li>
+<li>NewsAndUpdates model is created contains three variables, title, desc and date</li>
+<li>Added UserFaq view to views.py</li>
+<li>Added FAQ view to views.py</li>
+<li>FAQ model is added to the admin page</li>
+<li>Added FAQ url to urls.py</li>
+<li>FAQ model is created, contains two variables question and answer</li>
+<li>SampleFile model is added to the admin page</li>
+<li>UserProfile model is added to the admin page</li>
+<li>UserProfile model is created</li>
+<li>About model is added to the admin page</li>
+<li>Tutorial page view now also includes the url for the media</li>
+<li>Tutorial model is added to the admin page</li>
+<li>Admin page is now accessible</li>
